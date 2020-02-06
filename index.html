@@ -24,7 +24,7 @@
 
 <body>
     <div class="container container-flex card">
-        <h1>Hola desde AWS</h1>
+        <h1>Hola desde AWS</h1> <h2 id="clock"></h2>
         <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus impedit ullam consequuntur eveniet? Quisquam inventore sed est, non natus consequatur, alias pariatur, obcaecati voluptate quae a quos possimus in vitae?</h1>
         <img class="card-image-top"
             src="https://as.ftcdn.net/r/v1/pics/7b11b8176a3611dbfb25406156a6ef50cd3a5009/home/discover_collections/optimized/image-2019-10-11-11-36-27-681.jpg"
@@ -45,5 +45,16 @@
         </div>
     </div>
 </body>
+<script>
+    var myVar = setInterval(function () {
+        myTimer();
+    }, 1000);
 
+    function myTimer() {
+        var d = new Date();
+        document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+    }
+</script>
+
+</html>
 </html>
